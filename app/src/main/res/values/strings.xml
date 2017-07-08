@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Burger Tahu</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtLogin">Log In</string>
+
+    <!-- Tab Layout String -->
+    <string name="tabBeranda">Home</string>
+    <string name="tabRiwayat">History</string>
+    <string name="tabPengaturan">Settings</string>
+    <!--* Tab Layout String *-->
+
+    <!-- Content Pengaturan -->
+    <string name="txtChangeProfile">Change Profile</string>
+    <string name="txtChangePwd">Change Password</string>
+    <string name="txtLogout">Log Out</string>
+    <!--* Content Pengaturan *-->
+</resources>

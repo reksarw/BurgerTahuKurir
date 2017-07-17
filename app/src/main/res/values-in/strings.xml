@@ -14,5 +14,6 @@
     <string name="txtChangeProfile">Ubah profil</string>
     <string name="txtChangePwd">Ubah password</string>
     <string name="txtLogout">Keluar</string>
+    <string name="txtSave">Simpan</string>
     <!--* Content Pengaturan *-->
 </resources>

@@ -11,6 +11,8 @@ import java.util.Locale;
 
 public class BaseApp extends Application {
 
+    public static final String endpointUrl = "http://localhost:5000/";
+
     @Override
     public void onCreate()
     {

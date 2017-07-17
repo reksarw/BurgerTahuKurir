@@ -9,18 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.burgertahu.kurir.R;
-import com.burgertahu.kurir.adapter.RecyclerAdapter;
+import com.burgertahu.kurir.adapter.SettingAdapter;
 
 
-public class OneFragment extends Fragment{
+public class Pengaturan extends Fragment{
 
-    String [] name={"Apple","Facebook","Twitter","Google",
-            "Microsoft","Wikipedia","Yahoo","Youtube"};
-
-    String [] deskripsi = {"Apple is" , "Facebook is" , "Twitter is" , "Google is" , "Microsoft is"
-            ,"Wikipedia is","Yahoo is","Youtube is"};
-
-    public OneFragment() {
+    public Pengaturan() {
         // Required empty public constructor
     }
 
@@ -32,15 +26,13 @@ public class OneFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.halaman_pengaturan, container, false);
+        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rvPengaturan);
 
-        View rootView = inflater.inflate(R.layout.halaman_beranda, container, false);
-        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rvBeranda);
-
-        RecyclerAdapter adapter = new RecyclerAdapter(name , deskripsi , getContext().getApplicationContext());
+        SettingAdapter adapter = new SettingAdapter(getContext().getApplicationContext());
         rv.setAdapter(adapter);
         rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(getActivity()));
-
         return rootView;
     }
 

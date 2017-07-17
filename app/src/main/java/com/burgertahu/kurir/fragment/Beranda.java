@@ -9,12 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.burgertahu.kurir.R;
-import com.burgertahu.kurir.adapter.SettingAdapter;
+import com.burgertahu.kurir.adapter.OrderAdapter;
 
 
-public class ThreeFragment extends Fragment{
+public class Beranda extends Fragment{
 
-    public ThreeFragment() {
+    public Beranda() {
         // Required empty public constructor
     }
 
@@ -26,13 +26,15 @@ public class ThreeFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.halaman_pengaturan, container, false);
-        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rvPengaturan);
 
-        SettingAdapter adapter = new SettingAdapter(getContext().getApplicationContext());
+        View rootView = inflater.inflate(R.layout.halaman_beranda, container, false);
+        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rvBeranda);
+
+        OrderAdapter adapter = new OrderAdapter(getContext().getApplicationContext());
         rv.setAdapter(adapter);
         rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(getActivity()));
+
         return rootView;
     }
 

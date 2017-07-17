@@ -14,5 +14,8 @@
     <string name="txtChangeProfile">Change Profile</string>
     <string name="txtChangePwd">Change Password</string>
     <string name="txtLogout">Log Out</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="txtSave">Save</string>
     <!--* Content Pengaturan *-->
+
 </resources>

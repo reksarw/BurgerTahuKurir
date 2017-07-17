@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileLayout"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/defaultWhite"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Nama Lengkap" />
+
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/txtUsername"
+        android:textColor="@color/defaultBlack"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:backgroundTint="@color/warnaField"
+        android:textColorHint="@color/warnaPlacehoder"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Nama Pengguna" />
+
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/txtUsername"
+        android:textColor="@color/defaultBlack"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:backgroundTint="@color/warnaField"
+        android:textColorHint="@color/warnaPlacehoder"
+        />
+</LinearLayout>

@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import com.burgertahu.kurir.R;
 
 
-public class TwoFragment extends Fragment{
+public class Riwayat extends Fragment{
 
-    public TwoFragment() {
+    public Riwayat() {
         // Required empty public constructor
     }
 

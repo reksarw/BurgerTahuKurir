@@ -6,7 +6,7 @@
 
     <!-- Tab Layout String -->
     <string name="tabBeranda">Beranda</string>
-    <string name="tabRiwayat">Riwayat</string>
+    <string name="tabRiwayat">Pesanan</string>
     <string name="tabPengaturan">Pengaturan</string>
     <!--* Tab Layout String *-->
 
@@ -15,5 +15,8 @@
     <string name="txtChangePwd">Ubah password</string>
     <string name="txtLogout">Keluar</string>
     <string name="txtSave">Simpan</string>
+    <string name="tabCompleted">Selesai</string>
+    <string name="tabProses">Dalam Proses</string>
+    <string name="title_activity_maps">Peta</string>
     <!--* Content Pengaturan *-->
 </resources>

@@ -8,9 +8,11 @@
     tools:context=".activity.MainActivity"
     android:theme="@style/ThemeOverlay.AppCompat" >
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpagerhistory"
-        android:layout_width="match_parent"
+    <TextView
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Proses!"
+        />
 </android.support.design.widget.CoordinatorLayout>

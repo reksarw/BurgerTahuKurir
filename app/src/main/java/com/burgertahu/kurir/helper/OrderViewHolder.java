@@ -16,13 +16,14 @@ public class OrderViewHolder extends RecyclerView.ViewHolder {
     public TextView cvNama ,cvAlamat , cvKeterangan, cvTanggalWaktu;
     private Context context;
 
-    public OrderViewHolder(final View itemView) {
+    public OrderViewHolder(final View itemView , final String[] mDataNama) {
         super(itemView);
         context = itemView.getContext().getApplicationContext();
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent pindah = new Intent(context, OrderActivity.class);
+                pindah.putExtra("INTENT_TANGGAL_WAKTU" , "" + mDataNama[getPosition()]);
                 context.startActivity(pindah);
             }
         });

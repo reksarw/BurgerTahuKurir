@@ -38,4 +38,13 @@
         <!--<item name="tabSelectedTextColor">@color/defaultBlack</item>-->
         <!--<item name="tabIndicatorColor">#ffffff</item>-->
     </style>
+
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16dp</item>
+        <!-- include other attributes you want to change: textColor, textStyle, etc -->
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">12dp</item>
+    </style>
 </resources>

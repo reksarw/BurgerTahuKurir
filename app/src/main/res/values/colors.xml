@@ -8,4 +8,6 @@
     <color name="warnaField">#adafafaf</color>
     <color name="warnaBackground">#fc0008</color>
     <color name="warnaPlacehoder">@color/defaultWhite</color>
+    <color name="tabActive">#00ff2b</color>
+    <color name="tabNotActive">#FFF</color>
 </resources>

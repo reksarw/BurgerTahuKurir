@@ -1,0 +1,285 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderLayout"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBar"-->
+            <!--style="?android:attr/progressBarStyle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_gravity="center|center_horizontal|center_vertical"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <!-- maps -->
+            <TextView
+                android:id="@+id/kk"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="GOOGLE MAPS!" />
+        </RelativeLayout>
+
+        <!-- user section -->
+        <RelativeLayout
+            android:id="@+id/userSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/userLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.09"
+                    android:src="@drawable/ic_location" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user.name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="0dp"
+                android:text="Reksa Rangga Wardhana "
+                android:textColor="#565656"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iconSms"
+                android:layout_alignParentRight="true"
+                android:layout_width="35dp"
+                android:src="@drawable/ic_sms"
+                android:layout_marginRight="50dp"
+                android:layout_height="30dp"
+                android:padding="5dp"/>
+
+            <ImageView
+                android:id="@+id/iconTelp"
+                android:layout_alignParentRight="true"
+                android:layout_width="25dp"
+                android:src="@drawable/ic_call"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/user.address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="65dp"
+                android:text="Jl. Kyai Hassanudin , Komplek ABC , Jakarta Pusat , DKI Jakarta"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_below="@+id/user.name"
+                android:layout_marginTop="16dp"
+                android:layout_alignRight="@+id/iconSms"
+                android:layout_alignEnd="@+id/iconSms" />
+        </RelativeLayout>
+
+        <!-- market section -->
+        <RelativeLayout
+            android:id="@+id/marketSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/marketLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.09"
+                    android:src="@drawable/ic_store" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/outlet.name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="0dp"
+                android:text="Burger Tahu Sukarno Hatta"
+                android:textColor="#565656"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/outlet.address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:text="Jl. Kyai Hassanudin , Komplek ABC , Jakarta Pusat , DKI Jakarta"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/outlet.name"
+                android:layout_marginLeft="72dp" />
+
+            <TextView
+                android:id="@+id/txtLihatPesanan"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:textColor="#0048ff"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="65dp"
+                android:layout_below="@+id/outlet.address"
+                android:text="LIHAT PESANAN"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+        <!-- keterangan section -->
+        <RelativeLayout
+            android:id="@+id/keteranganSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/keteranganLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.09"
+                    android:src="@drawable/ic_info" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/keterangan.title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="0dp"
+                android:text="Keterangan"
+                android:textColor="#565656"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/keterangan.content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:text="Saya tunggu secepatnya, Karena saya laper Saya tunggu secepatnya, Karena saya laper Saya tunggu secepatnya, Karena saya laper"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/keterangan.title"
+                android:layout_marginLeft="72dp" />
+
+        </RelativeLayout>
+
+        <!-- devliery section -->
+        <RelativeLayout
+            android:id="@+id/deliverySection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/deliveryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.09"
+                    android:src="@drawable/ic_shipping" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/deliv.title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="0dp"
+                android:text="Biaya Antar"
+                android:textColor="#565656"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/deliv.nominal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:text="Rp 15.000"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/deliv.title"
+                android:layout_marginLeft="72dp" />
+
+        </RelativeLayout>
+
+        <!-- Button Antar -->
+        <Button
+            android:id="@+id/btnAntar"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/warnaBackground"
+            android:textColor="@color/defaultWhite"
+            android:layout_marginBottom="30dp"
+            android:text="Mulai Antar" />
+
+        <Button
+            android:id="@+id/btnLihatRute"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/warnaBackground"
+            android:textColor="@color/defaultWhite"
+            android:layout_marginBottom="30dp"
+            android:text="Lihat Rute" />
+    </LinearLayout>
+</ScrollView>

@@ -16,6 +16,22 @@
     <string name="txtLogout">Log Out</string>
     <string name="title_activity_maps">Map</string>
     <string name="txtSave">Save</string>
+    <string name="tabProses">In Progress</string>
+    <string name="tabCompleted">Completed</string>
     <!--* Content Pengaturan *-->
 
+    <string-array name="month">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
 </resources>

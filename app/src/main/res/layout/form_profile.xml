@@ -1,14 +1,32 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/profileLayout"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="400dp"
     android:background="@color/defaultWhite"
     android:orientation="vertical"
-    android:padding="15dp">
+    android:padding="15dp"
+    tools:context=".activity.ProfilActivity">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/profile_image"-->
+        <!--android:layout_width="96dp"-->
+        <!--android:layout_height="96dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/ic_home"-->
+        <!--app:civ_border_width="2dp"-->
+        <!--app:civ_border_color="#FF000000"/>-->
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/txtNama"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp"
@@ -18,12 +36,10 @@
         android:id="@+id/inputNama"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="@string/txtUsername"
         android:textColor="@color/defaultBlack"
         android:singleLine="true"
         android:textSize="14sp"
         android:backgroundTint="@color/warnaField"
-        android:textColorHint="@color/warnaPlacehoder"
         />
 
     <TextView
@@ -38,11 +54,45 @@
         android:id="@+id/inputUsername"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="@string/txtUsername"
         android:textColor="@color/defaultBlack"
         android:singleLine="true"
         android:textSize="14sp"
         android:backgroundTint="@color/warnaField"
-        android:textColorHint="@color/warnaPlacehoder"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtNoHp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="No Handphone" />
+
+    <EditText
+        android:id="@+id/inputNoHp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/defaultBlack"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:backgroundTint="@color/warnaField"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtNoPlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="No Plat" />
+
+    <EditText
+        android:id="@+id/inputNoPlat"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/defaultBlack"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:backgroundTint="@color/warnaField"
         />
 </LinearLayout>
